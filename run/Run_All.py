@@ -21,7 +21,7 @@ def run_all():
     runner = HTMLTestRunner(stream=f,
                             title='DISCUZ论坛UI自动化测试报告',
                             description='用例执行情况如下：',
-                            tester='多测师小黄')
+                            tester='多测师黄sir')
     runner.run(discover)
     f.close()
     sm = SendMail(send_msg=filename,attachment=filename)
