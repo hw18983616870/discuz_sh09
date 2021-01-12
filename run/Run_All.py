@@ -16,7 +16,7 @@ def run_all():
     discover = unittest.defaultTestLoader.discover(start_dir=testcase_path,pattern='Test*.py')
     # print(discover)
     now = time.strftime('%Y-%m-%d-%H-%M-%S')
-    filename = report_path+'\\'+str(now)+'_ui_report.html'
+    filename = report_path+'ui_report.html'
     f = open(file=filename,mode='wb')
     runner = HTMLTestRunner(stream=f,
                             title='DISCUZ论坛UI自动化测试报告',
